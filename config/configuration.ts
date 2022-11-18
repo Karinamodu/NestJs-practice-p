@@ -3,9 +3,10 @@ import { TypeOrmModuleAsyncOptions, TypeOrmModuleOptions } from "@nestjs/typeorm
 import { optionEntity } from "src/option/opdtionEntity/optionEntity";
 import { questionEntity } from "src/question/questionEntity/qustionEntity";
 import { quizEntity } from "src/quiz/quizEntity/quizEntity";
-// import dotenv from 'dotenv';
+// import  dotenv  from 'dotenv';
+import * as dotenv from 'dotenv'
 
-// dotenv.config();
+dotenv.config()
 
 export default class TypeOrmConfig {
     static getOrmConfig(configService: ConfigService): TypeOrmModuleOptions{
